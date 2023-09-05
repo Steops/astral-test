@@ -1,0 +1,28 @@
+.header {
+  padding: 20px 0px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  &__links {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.--sign-in {
+  background-color: $primary-color;
+  padding: 0 10px;
+}
+
+@media (max-width: 450px) {
+  .header {
+    &__links {
+      gap: 10px;
+    }
+  }
+}

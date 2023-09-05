@@ -1,0 +1,44 @@
+//fonts
+@import '/src/assets/scss/core/fonts';
+//variables
+@import '/src/assets/scss/core/variables';
+//components
+@import '/src/assets/scss/components';
+//pages
+@import '/src/assets/scss/pages';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $line-height;
+  color: $font-color;
+  min-width: 300px;
+}
+
+.router_layout {
+  display: flex;
+  flex: 1;
+}

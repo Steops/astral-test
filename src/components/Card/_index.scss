@@ -1,0 +1,75 @@
+.card {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  &__front {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  &__motivation {
+    color: rgb(4, 4, 197);
+    font-weight: 1000;
+  }
+  &__word {
+    font-size: $font-size * 2;
+  }
+  &__part {
+    font-size: $font-size * 0.8;
+    opacity: 0.5;
+  }
+  &__meaning {
+    font-size: $font-size;
+    line-height: $line-height * 0.7;
+    max-height: 110px;
+    margin-bottom: auto;
+  }
+  &__btn {
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__front,
+  &__back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    backface-visibility: hidden;
+    height: 100%;
+  }
+  &__back {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    top: 0;
+    border: 1px solid black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__translation {
+    margin-top: 39px;
+  }
+}
+
+._flipped .card__front {
+  transform: rotateY(180deg);
+}
+._flipped .card__back {
+  transform: rotateY(360deg);
+  background-color: $primary-color;
+  border: none;
+}
+._hidden {
+  display: none;
+}

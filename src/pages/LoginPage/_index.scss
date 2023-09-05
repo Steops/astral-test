@@ -1,0 +1,42 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 40px;
+    position: relative;
+  }
+  &__field {
+    font-size: $font-size;
+    padding: 10px;
+  }
+  &__button {
+    background-color: $primary-color;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+  }
+}
+
+.login-page__error {
+  &-email {
+    position: absolute;
+    top: 40px;
+    color: red;
+    font-size: $font-size * 0.8;
+  }
+  &-password {
+    position: absolute;
+    top: 120px;
+    color: red;
+    font-size: $font-size * 0.8;
+  }
+}

@@ -1,0 +1,10 @@
+.page {
+  width: 100vw;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: min(100% - 50px, 1200px);
+    margin: 0 auto;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
